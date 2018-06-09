@@ -135,10 +135,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [docs/create-react-app.md](docs/create-react-app.md)
 
-## Core Team 
+## Core Team
 
 * Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
-* DApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
+* ÐApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
 
 ## About EOS Costa Rica
 
