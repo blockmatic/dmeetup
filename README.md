@@ -62,9 +62,6 @@ The main communication channels for organizing and collaborating are this reposi
 
 [![Introduction to Blockchain](https://monosnap.com/image/GOx4Jv5DSd1H4cl1WDAftR5X5DMQI5.png)](https://www.youtube.com/watch?v=sYAktmG1NuA)
 
-* Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
-* DApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
-
 ## Contributing
 
 We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across To do, In progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
@@ -137,6 +134,11 @@ source https://steemit.com/eos/@eosio/introducing-eos-io-application-stack
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 [docs/create-react-app.md](docs/create-react-app.md)
+
+## Core Team 
+
+* Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
+* DApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
 
 ## About EOS Costa Rica
 
