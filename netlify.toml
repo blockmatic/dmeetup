@@ -6,11 +6,8 @@
 [context.production.environment]
   REACT_APP_STAGE = "production"
 
-[context.master.environment]
-  REACT_APP_STAGE = "staging"
-
 [context.deploy-preview.environment]
-  REACT_APP_STAGE = "qa"
+  REACT_APP_STAGE = "staging"
 
 [[redirects]]
   from = "/*"
