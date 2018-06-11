@@ -1,0 +1,18 @@
+[build]
+  base    = "."
+  command = "yarn build"
+  publish = "build"
+
+[context.production.environment]
+  REACT_APP_STAGE = "production"
+
+[context.master.environment]
+  REACT_APP_STAGE = "staging"
+
+[context.deploy-preview.environment]
+  REACT_APP_STAGE = "qa"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
