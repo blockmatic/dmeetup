@@ -1,4 +1,7 @@
 <p align="center">
+	<a href="https://travis-ci.org/eoscostarica/dmeetup">
+		<img src="https://travis-ci.org/eoscostarica/dmeetup.svg?branch=master" alt="TravisCI">
+	</a>
 	<a href="http://standardjs.com">
 		<img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="StandardJS">
 	</a>
@@ -33,22 +36,22 @@ Steemit for on-site and online events and workshops.
 
 ## Contents
 
-* [Getting Started](#getting-started)
-* [Contributing](#contributing)
-* [Bug Reporting](#bug-reporting)
-* [Features](#features)
-  * [Phase 1](#phase-1)
-  * [Phase 2](#phase-2)
-* [Technology](#technology)
-  * [Why EOS ?](#why-eos-)
-  * [EOS.io Application Stack](#eosio-application-stack)
-  * [Building EOS DApps](#building-eos-dapps)
-  * [EOS Documentation](#eos-documentation)
-  * [EOS Storage](#eos-storage)
-  * [IPFS Documentation](#ipfs-documentation)
-  * [React Documentation](#react-documentation)
-  * [About EOS Costa Rica](#about-eos-costa-rica)
-  * [License](#license)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Bug Reporting](#bug-reporting)
+- [Features](#features)
+  - [Phase 1](#phase-1)
+  - [Phase 2](#phase-2)
+- [Technology](#technology)
+  - [Why EOS ?](#why-eos-)
+  - [EOS.io Application Stack](#eosio-application-stack)
+  - [Building EOS DApps](#building-eos-dapps)
+  - [EOS Documentation](#eos-documentation)
+  - [EOS Storage](#eos-storage)
+  - [IPFS Documentation](#ipfs-documentation)
+  - [React Documentation](#react-documentation)
+  - [About EOS Costa Rica](#about-eos-costa-rica)
+  - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -80,23 +83,23 @@ Please report bugs big and small by [opening an issue](https://github.com/eoscos
 
 ### Phase 1
 
-* Accounts
-* User posts a meetup event and tags it
-* User makes a reservation to the meetup event
-* User votes up the meetup ( reputation )
-* Events feed with filters
+- Accounts
+- User posts a meetup event and tags it
+- User makes a reservation to the meetup event
+- User votes up the meetup ( reputation )
+- Events feed with filters
 
 ### Phase 2
 
-* User pays to rsvp the meetup
-* Token rewards for the speakers/organizers
+- User pays to rsvp the meetup
+- Token rewards for the speakers/organizers
 
 # Technology
 
-* EOS
-* IPFS
-* React.js
-* Docker for the dev environment
+- EOS
+- IPFS
+- React.js
+- Docker for the dev environment
 
 ## Why EOS ?
 
@@ -111,32 +114,32 @@ source https://steemit.com/eos/@eosio/introducing-eos-io-application-stack
 
 ## Building EOS DApps
 
-* [Webinar: Building Distributed Apps With EOS.IO Blockchain](https://objectcomputing.com/resources/events/webinars/building-apps-with-eos/webinar-recording)
+- [Webinar: Building Distributed Apps With EOS.IO Blockchain](https://objectcomputing.com/resources/events/webinars/building-apps-with-eos/webinar-recording)
 
 ## EOS Documentation & Resources
 
-* https://github.com/EOSIO/eos/wiki
-* https://developers.eos.io/
-* https://github.com/EOS-Nation/Awesome-EOS
-* [EOS Educational Series on YouTube](https://www.youtube.com/channel/UClgHiX4W1yxyohrif0gEllA)
+- https://github.com/EOSIO/eos/wiki
+- https://developers.eos.io/
+- https://github.com/EOS-Nation/Awesome-EOS
+- [EOS Educational Series on YouTube](https://www.youtube.com/channel/UClgHiX4W1yxyohrif0gEllA)
 
 ## EOS Storage
 
-* [5 Reasons Why EOS Storage Will Change Data Storage Forever](https://www.youtube.com/watch?v=7mFzb5SqS9U)
-* [EOS.IO Storage White Paper](https://steemit.com/eos/@eosio/eos-io-storage-white-paper-now-available)
+- [5 Reasons Why EOS Storage Will Change Data Storage Forever](https://www.youtube.com/watch?v=7mFzb5SqS9U)
+- [EOS.IO Storage White Paper](https://steemit.com/eos/@eosio/eos-io-storage-white-paper-now-available)
 
 EOS Storage will allow you to host dApps thru EOS APIs, this hasn't been implemented yet, though.
 In the mean time we are going to have use IPFS directly.
 
-* https://ipfs.io/docs/
-* https://github.com/ipfs/awesome-ipfs
+- https://ipfs.io/docs/
+- https://github.com/ipfs/awesome-ipfs
 
 ## IPFS Documentation
 
-* https://github.com/ipfs/ipfs#how-ipfs-work
-* https://ipfs.io/docs/
-* https://beta.docs.ipfs.io
-* https://github.com/ipfs/js-ipfs
+- https://github.com/ipfs/ipfs#how-ipfs-work
+- https://ipfs.io/docs/
+- https://beta.docs.ipfs.io
+- https://github.com/ipfs/js-ipfs
 
 [![IFPS Simply Explained](https://monosnap.com/image/PW76DIRPGLOmtWyPEiXK2NvsDHiR4x.png)](https://www.youtube.com/watch?v=5Uj6uR3fp-U)
 
@@ -148,8 +151,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Core Team
 
-* Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
-* ÐApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
+- Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
+- ÐApp Architect [@kevin-wolf](https://github.com/kevin-wolf).
 
 ## About EOS Costa Rica
 
