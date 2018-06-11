@@ -13,8 +13,6 @@ import registerServiceWorker from "./registerServiceWorker";
 
 const { store } = setupStore();
 
-console.log(process.env)
-
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate persistor={getPersistor()}>
