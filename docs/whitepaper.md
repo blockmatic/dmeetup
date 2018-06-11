@@ -26,12 +26,11 @@ Gabo is a proponent of open source technology stacks and decentralized applicati
 
 ### Kevin Villalobos - ÐMeetup Architect
 
-Kevin is a passionate self taught full stack developer with an obsession with performance and
-dont-repating-himself, since he met the blockchain and cryptocurrencies world he hasn't been able stop digging in. He leads software development teams and have a passion on researching new technologies. When he is not writing software, he is playing some techno, tech house and house records on a local club. He even has a [soundcloud](https://soundcloud.com/djwolfcr) page!
+Kevin is a passionate self taught full stack developer with an obsession with performance and dont-repating-himself, since he met the blockchain and cryptocurrencies world he hasn't been able stop digging in. He leads software development teams and have a passion on researching new technologies. When he is not writing software, he is playing some techno, tech house and house records on a local club. He even has a [soundcloud](https://soundcloud.com/djwolfcr) page!
 
 [github](@kevin-wolf) | [linkedin](https://www.linkedin.com/in/kevinvillalobos/)
 
-### What to Join ?
+### Want to Join DMeetup ?
 
 We are looking for Desing/UX, Developers, Community Managers, Marketing... we are open to any sort of contribution. Get in touch with us thru the [discord server](https://discord.gg/bBpQHym)
 
