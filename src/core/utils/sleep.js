@@ -1,6 +1,6 @@
 import invariant from 'invariant'
 
-export const getEnv = name => {
+export const getEnv2 = name => {
   const variableName = `REACT_APP_${name}`
   const variableValue = process.env[variableName]
 
