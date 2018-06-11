@@ -6,6 +6,7 @@ import { getPersistor } from "@rematch/persist";
 import { ThemeProvider } from "styled-components";
 import "react-placeholder/lib/reactPlaceholder.css";
 
+import { getEnv } from "./core/utils";
 import setupStore from "./core/store/setup";
 import { theme } from "./core/constants";
 import App from "./App";
@@ -23,4 +24,10 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+
 registerServiceWorker();
+
+// Expose some variables for debugging.
+window.env = {
+  STAGE: getEnv("STAGE")
+};
