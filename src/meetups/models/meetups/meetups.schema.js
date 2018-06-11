@@ -1,5 +1,5 @@
-import { schema } from "normalizr";
+import { schema } from 'normalizr'
 
-const meetupSchema = new schema.Entity("meetups");
+const meetupSchema = new schema.Entity('meetups')
 
-export default meetupSchema;
+export default meetupSchema

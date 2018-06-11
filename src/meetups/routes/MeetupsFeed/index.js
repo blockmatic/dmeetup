@@ -1,10 +1,10 @@
-import React from "react";
-import Component from "@reactions/component";
-import { select } from "@rematch/select";
+import React from 'react'
+import Component from '@reactions/component'
+import { select } from '@rematch/select'
 
-import { Connect } from "core/utils";
-import { Container, Heading } from "core/components";
-import { MeetupsList } from "meetups/components";
+import { Connect } from 'core/utils'
+import { Container, Heading } from 'core/components'
+import { MeetupsList } from 'meetups/components'
 
 const MeetupsFeed = () => (
   <Connect
@@ -16,7 +16,7 @@ const MeetupsFeed = () => (
     {({ state, dispatch }) => (
       <Component
         didMount={() => {
-          dispatch.meetups.fetch();
+          dispatch.meetups.fetch()
         }}
       >
         <Container>
@@ -29,6 +29,6 @@ const MeetupsFeed = () => (
       </Component>
     )}
   </Connect>
-);
+)
 
-export default MeetupsFeed;
+export default MeetupsFeed

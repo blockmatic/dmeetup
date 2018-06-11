@@ -1,13 +1,13 @@
-import sys from "system-components";
-import { Flex } from "grid-styled";
+import sys from 'system-components'
+import { Flex } from 'grid-styled'
 
 const Wrapper = sys({
-  bg: "clouds",
+  bg: 'clouds',
   is: Flex,
-  flexDirection: "column",
-  fontFamily: "sans"
+  flexDirection: 'column',
+  fontFamily: 'sans'
 }).extend`
   min-height: 100vh;
-`;
+`
 
-export default Wrapper;
+export default Wrapper

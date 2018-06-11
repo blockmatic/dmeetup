@@ -4,8 +4,16 @@
   "name": "eos-dmeetup",
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom"
+    "lint": "eslint src",
+    "test": "echo 'Tests are not implemented'; exit 0; react-app-rewired test --env=jsdom",
+    "precommit": "lint-staged",
+    "build": "react-app-rewired build"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "@reach/router": "^1.1.0",
@@ -19,16 +27,42 @@
     "normalizr": "^3.2.4",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-app-rewire-hot-loader": "^1.0.1",
-    "react-app-rewired": "^1.5.2",
     "react-dom": "^16.3.2",
-    "react-hot-loader": "^4.3.1",
     "react-placeholder": "^3.0.1",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-persist": "^5.10.0",
     "styled-components": "^3.3.2",
     "system-components": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "4.15.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "react-app-rewire-eslint": "^0.2.3",
+    "react-app-rewire-hot-loader": "^1.0.1",
+    "react-app-rewired": "^1.5.2",
+    "react-hot-loader": "^4.3.1",
+    "react-scripts": "^2.0.0-next.66cc7a90"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
   }
 }

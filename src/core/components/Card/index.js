@@ -1,12 +1,12 @@
-import sys from "system-components";
-import { Flex } from "grid-styled";
+import sys from 'system-components'
+import { Flex } from 'grid-styled'
 
 const Card = sys({
-  bg: "white",
+  bg: 'white',
   flex: 1,
-  flexDirection: "column",
+  flexDirection: 'column',
   is: Flex,
   p: 3
-});
+})
 
-export default Card;
+export default Card

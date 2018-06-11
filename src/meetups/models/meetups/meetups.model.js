@@ -1,6 +1,6 @@
-import { sleep } from "core/utils";
-import utils from "./meetups.utils";
-import mocks from "./meetups.mocks";
+import { sleep } from 'core/utils'
+import utils from './meetups.utils'
+import mocks from './meetups.mocks'
 
 const meetupModel = {
   state: {},
@@ -11,21 +11,21 @@ const meetupModel = {
     })
   },
   effects: {
-    async fetch() {
+    async fetch () {
       const {
         entities: { meetups }
-      } = utils.normalize(mocks.meetups);
+      } = utils.normalize(mocks.meetups)
 
-      await sleep(3);
-      this.set({ meetups });
+      await sleep(3)
+      this.set({ meetups })
     }
   },
   selectors: {
     all: state => {
-      const { meetups } = utils.denormalize(Object.keys(state), state);
-      return meetups;
+      const { meetups } = utils.denormalize(Object.keys(state), state)
+      return meetups
     }
   }
-};
+}
 
-export default meetupModel;
+export default meetupModel

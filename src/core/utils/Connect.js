@@ -1,10 +1,10 @@
-import { connect } from "react-redux";
+import { connect } from 'react-redux'
 
-const WithStore = ({ children, ...props }) => children(props);
-const defaultSelector = state => state;
+const WithStore = ({ children, ...props }) => children(props)
+const defaultSelector = state => state
 
 const connectHOC = connect((state, { select = defaultSelector }) => ({
   state: select(state)
-}))(WithStore);
+}))(WithStore)
 
-export default connectHOC;
+export default connectHOC

@@ -1,1 +1,1 @@
-export { default as meetups } from "./meetups";
+export { default as meetups } from './meetups'

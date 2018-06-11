@@ -1,6 +1,8 @@
-const rewireReactHotLoader = require("react-app-rewire-hot-loader");
+const { compose } = require('react-app-rewired')
+const rewireEslint = require('react-app-rewire-eslint')
+const rewireReactHotLoader = require('react-app-rewire-hot-loader')
 
-module.exports = function override(config, env) {
-  config = rewireReactHotLoader(config, env);
-  return config;
-};
+module.exports = compose(
+  rewireEslint,
+  rewireReactHotLoader
+)

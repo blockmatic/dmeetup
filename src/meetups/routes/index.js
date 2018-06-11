@@ -1,1 +1,1 @@
-export { default as MeetupsFeed } from "./MeetupsFeed";
+export { default as MeetupsFeed } from './MeetupsFeed'

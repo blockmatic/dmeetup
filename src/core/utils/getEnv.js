@@ -1,15 +1,15 @@
-import invariant from "invariant";
+import invariant from 'invariant'
 
 const getEnv = name => {
-  const variableName = `REACT_APP_${name}`;
-  const variableValue = process.env[variableName];
+  const variableName = `REACT_APP_${name}`
+  const variableValue = process.env[variableName]
 
   invariant(
     variableValue,
     `[${name}] variable is not defined. Please export it as ${variableName} and try again.`
-  );
+  )
 
-  return variableValue;
-};
+  return variableValue
+}
 
-export default getEnv;
+export default getEnv
