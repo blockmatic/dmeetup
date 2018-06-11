@@ -1,16 +1,33 @@
 {
-  "name": "eos-dmeetup",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
-  },
+  "version": "0.1.0",
+  "name": "eos-dmeetup",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  },
+  "dependencies": {
+    "@reach/router": "^1.1.0",
+    "@reactions/component": "^2.0.2",
+    "@rematch/core": "1.0.0-alpha.8",
+    "@rematch/loading": "^1.0.4",
+    "@rematch/persist": "^1.0.2",
+    "@rematch/select": "^1.0.2",
+    "grid-styled": "^4.1.0",
+    "normalizr": "^3.2.4",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-app-rewire-hot-loader": "^1.0.1",
+    "react-app-rewired": "^1.5.2",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.3.1",
+    "react-placeholder": "^3.0.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "styled-components": "^3.3.2",
+    "system-components": "^2.0.4"
   }
 }
