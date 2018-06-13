@@ -42,7 +42,12 @@ WIP https://github.com/eoscostarica/dmeetup/issues/4
 
 ### Token Allocation
 
-WIP
+WIP https://github.com/eoscostarica/dmeetup/issues/4
+
+- Rewards
+- EOS infrastructure resources
+- Community fund ( foundation )
+- Core team
 
 ## Governance
 
