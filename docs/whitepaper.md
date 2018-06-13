@@ -77,7 +77,7 @@ The Community Fund will also provide optional, value-add services for the commun
 
 ### Gabo Esquivel - Project Lead
 
-Gabo is a proponent of open source technology stacks and decentralized applications (DApps). He believes that blockchain will have a cornerstone role in our society to build better, more efficient, fair, accountable and transparent organizations, communities and economies. He leads software engineering teams and also loves coding, particularly in JavaScript (Node.js, React) and more recently smart contracts. He co-founded BlockchainCR, a community hub for knowledge sharing, promoting and studying blockchain technologies. He is an EOS enthusiast and open source contributor to EOS Costa Rica.
+Gabo is a proponent of open source technology stacks and decentralized applications (DApps). He believes that blockchain will have a cornerstone role in our society to build better, more efficient, fair, accountable and transparent organizations, communities and economies. He leads software engineering teams and also loves coding, particularly in JavaScript (Node.js, React) and more recently smart contracts. He co-founded BlockchainCR, a community hub for knowledge sharing, promoting and studying blockchain technologies. He is an EOS enthusiast and open source contributor to EOS Costa Rica. Gabo is a tech events organizers and community builder, he founded and leads the largest tech meetups in Central America focusing in JavaScript (1700+ members), DevOps (600+ members) and Blockchain (800+ members), he has more than 6 years of experience organizing meetups and workshops.
 
 [github](@gaboesquivel) | [twitter](https://twitter.com/gaboesquivel) | [linkedin](https://linkedin.com/in/gaboesquivel) | [website](https://gaboesquivel.com)
 
@@ -95,7 +95,7 @@ Di (ass we call her) has in the technology industry for about 9 years, first as 
 
 ### Jorge Murillo - Design & UX
 
-...
+Jorge is a Web Designer currently specializing in User Interface Design with the University of Minnesota. An open minded, flexible and idealistic professional who's willing to see how deep the digital rabbit hole goes. When not at work, you'll surely find him playing with his kids or getting lost on his bike
 
 [github](@murillojorge) | [linkedin](https://www.linkedin.com/in/jmurillodev/)
 
