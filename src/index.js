@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
+import { Provider } from 'redux-render'
 import { PersistGate } from 'redux-persist/es/integration/react'
 import { getPersistor } from '@rematch/persist'
 import { ThemeProvider } from 'styled-components'
