@@ -13,8 +13,8 @@ const Feed = ({ isLoading, meetups }) => (
 
     <ReactPlaceholder
       showLoadingAnimation
-      ready={!isLoading}
-      customPlaceholder={<MeetupsList.Placeholder />}
+      ready={meetups.length > 0 || !isLoading}
+      customPlaceholder={MeetupsList.Placeholder}
     >
       <MeetupsList meetups={meetups} />
     </ReactPlaceholder>

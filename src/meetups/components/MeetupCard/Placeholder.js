@@ -5,7 +5,7 @@ import { Card } from 'core/components'
 
 const MeetupCardPlaceholder = () => (
   <Card>
-    <TextBlock rows={4} color='#eee' />
+    <TextBlock color='#eee' rows={4} />
   </Card>
 )
 
