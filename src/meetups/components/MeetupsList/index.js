@@ -1,29 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Flex } from 'grid-styled'
-import ReactPlaceholder from 'react-placeholder'
 
-import MeetupsPlaceholder from './MeetupsPlaceholder'
-import MeetupCard from './MeetupCard'
+import Placeholder from './Placeholder'
+import { MeetupCard } from '../'
 
-const MeetupsList = ({ isLoading, meetups }) => (
+const MeetupsList = ({ meetups }) => (
   <Flex wrap='wrap' m={-2}>
-    <ReactPlaceholder
-      showLoadingAnimation
-      ready={!(!meetups.length && isLoading)}
-      customPlaceholder={<MeetupsPlaceholder />}
-    >
-      {meetups.map(({ id, title, description }) => (
-        <Flex key={id} width={['100%', null, '50%']}>
-          <MeetupCard id={id} title={title} description={description} />
-        </Flex>
-      ))}
-    </ReactPlaceholder>
+    {meetups.map(({ id, title, description }) => (
+      <Flex key={id} m={2} width={['100%', null, '50%']}>
+        <MeetupCard id={id} title={title} description={description} />
+      </Flex>
+    ))}
   </Flex>
 )
 
+MeetupsList.Placeholder = Placeholder
+
 MeetupsList.propTypes = {
-  isLoading: PropTypes.bool.isRequired,
   meetups: PropTypes.arrayOf(PropTypes.shape(MeetupCard.propTypes)).isRequired
 }
 

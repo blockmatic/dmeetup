@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReactPlaceholder from 'react-placeholder'
 
 import { Container, Heading } from 'core/components'
 import { MeetupsList } from 'meetups/components'
@@ -10,7 +11,13 @@ const Feed = ({ isLoading, meetups }) => (
       Upcoming Meetups
     </Heading>
 
-    <MeetupsList isLoading={isLoading} meetups={meetups} />
+    <ReactPlaceholder
+      showLoadingAnimation
+      ready={!isLoading}
+      customPlaceholder={<MeetupsList.Placeholder />}
+    >
+      <MeetupsList meetups={meetups} />
+    </ReactPlaceholder>
   </Container>
 )
 

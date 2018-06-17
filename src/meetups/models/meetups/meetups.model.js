@@ -16,7 +16,7 @@ const meetupModel = {
         entities: { meetups }
       } = utils.normalize(mocks.meetups)
 
-      await sleep(3)
+      await sleep(1.5)
       this.set({ meetups })
     }
   },
