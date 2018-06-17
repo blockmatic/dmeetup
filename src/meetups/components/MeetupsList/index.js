@@ -8,7 +8,7 @@ import { MeetupCard } from '../'
 const MeetupsList = ({ meetups }) => (
   <Flex wrap='wrap' m={-2}>
     {meetups.map(({ id, title, description }) => (
-      <Flex key={id} m={2} width={['100%', null, '50%']}>
+      <Flex key={id} p={2} width={['100%', null, '50%']}>
         <MeetupCard id={id} title={title} description={description} />
       </Flex>
     ))}
