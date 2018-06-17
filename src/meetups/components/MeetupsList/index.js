@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Flex } from 'grid-styled'
 import ReactPlaceholder from 'react-placeholder'
 
-import { propTypes } from 'meetups/constants'
 import MeetupsPlaceholder from './MeetupsPlaceholder'
 import MeetupCard from './MeetupCard'
 
@@ -14,9 +13,9 @@ const MeetupsList = ({ isLoading, meetups }) => (
       ready={!(!meetups.length && isLoading)}
       customPlaceholder={<MeetupsPlaceholder />}
     >
-      {meetups.map(meetup => (
-        <Flex key={meetup.id} width={['100%', null, '50%']}>
-          <MeetupCard meetup={meetup} />
+      {meetups.map(({ id, title, description }) => (
+        <Flex key={id} width={['100%', null, '50%']}>
+          <MeetupCard id={id} title={title} description={description} />
         </Flex>
       ))}
     </ReactPlaceholder>
@@ -25,7 +24,7 @@ const MeetupsList = ({ isLoading, meetups }) => (
 
 MeetupsList.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  meetups: PropTypes.arrayOf(propTypes.meetup).isRequired
+  meetups: PropTypes.arrayOf(PropTypes.shape(MeetupCard.propTypes)).isRequired
 }
 
 export default MeetupsList
