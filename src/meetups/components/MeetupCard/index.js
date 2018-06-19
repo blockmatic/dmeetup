@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { propTypes } from 'meetups/constants'
 import { Card, Heading, Text } from 'core/components'
+import { meetups } from 'meetups/models'
 import Placeholder from './Placeholder'
 
 const MeetupCard = ({ title, description }) => (
@@ -16,7 +16,7 @@ const MeetupCard = ({ title, description }) => (
 MeetupCard.Placeholder = Placeholder
 
 MeetupCard.propTypes = {
-  ...propTypes.meetup
+  ...meetups.proptypes.meetup
 }
 
 export default MeetupCard
