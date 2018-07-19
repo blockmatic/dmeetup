@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
-import { Box } from 'grid-styled'
 
 import { Header } from 'core/components'
 import Wrapper from './Wrapper'
@@ -14,7 +13,7 @@ injectGlobal`
 const RootLayout = ({ children }) => (
   <Wrapper>
     <Header />
-    <Box flex={1}>{children}</Box>
+    {children}
   </Wrapper>
 )
 

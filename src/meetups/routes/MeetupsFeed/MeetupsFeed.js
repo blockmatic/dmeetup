@@ -2,23 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactPlaceholder from 'react-placeholder'
 
-import { Container, Heading } from 'core/components'
+import { Container, Grid, Heading } from 'core/components'
 import { MeetupsList } from 'meetups/components'
 
 const Feed = ({ isLoading, meetups }) => (
-  <Container>
-    <Heading border mb={4}>
-      Upcoming Meetups
-    </Heading>
+  <Grid is={Container}>
+    <Grid.Item gridColumn='1/-1'>
+      <Heading border>Upcoming Meetups</Heading>
+    </Grid.Item>
 
-    <ReactPlaceholder
-      showLoadingAnimation
-      ready={meetups.length > 0 || !isLoading}
-      customPlaceholder={MeetupsList.Placeholder}
-    >
-      <MeetupsList meetups={meetups} />
-    </ReactPlaceholder>
-  </Container>
+    <Grid.Item gridColumn='1/-1'>
+      <ReactPlaceholder
+        showLoadingAnimation
+        ready={meetups.length > 0 || !isLoading}
+        customPlaceholder={MeetupsList.Placeholder}
+      >
+        <MeetupsList meetups={meetups} />
+      </ReactPlaceholder>
+    </Grid.Item>
+  </Grid>
 )
 
 Feed.propTypes = {

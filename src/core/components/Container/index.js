@@ -1,13 +1,11 @@
 import sys from 'system-components'
-import { Flex } from 'grid-styled'
 
 const Container = sys({
-  flex: 1,
-  flexDirection: 'column',
-  is: Flex,
-  maxWidth: 1024,
+  gridTemplateColumns: ['repeat(4, 1fr)', 'repeat(8, 1fr)', 'repeat(12, 1fr)'],
   mx: 'auto',
-  p: 4
+  maxWidth: 1200,
+  px: 4,
+  py: 4
 })
 
 export default Container
