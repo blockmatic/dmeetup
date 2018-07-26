@@ -80,29 +80,7 @@ The Community Fund will also provide optional, value-add services for the commun
 
 ## Core Team
 
-### Gabo Esquivel - Project Lead
-
-Gabo is a proponent of open source technology stacks and decentralized applications (DApps). He believes that blockchain will have a cornerstone role in our society to build better, more efficient, fair, accountable and transparent organizations, communities and economies. He leads software engineering teams and also loves coding, particularly in JavaScript (Node.js, React) and more recently smart contracts. He co-founded BlockchainCR, a community hub for knowledge sharing, promoting and studying blockchain technologies. He is an EOS enthusiast and open source contributor to EOS Costa Rica. Gabo is a tech events organizers and community builder, he founded and leads the largest tech meetups in Central America focusing in JavaScript (1700+ members), DevOps (600+ members) and Blockchain (800+ members), he has more than 6 years of experience organizing meetups and workshops.
-
-[github](@gaboesquivel) | [twitter](https://twitter.com/gaboesquivel) | [linkedin](https://linkedin.com/in/gaboesquivel) | [website](https://gaboesquivel.com)
-
-### Kevin Villalobos - ÐApp Architect
-
-Kevin is a passionate self taught full stack developer with an obsession with performance and dont-repating-himself, since he met the blockchain and cryptocurrencies world he hasn't been able stop digging in. He leads software development teams and have a passion on researching new technologies. When he is not writing software, he is playing some techno, tech house and house records on a local club. He even has a [soundcloud](https://soundcloud.com/djwolfcr) page!
-
-[github](@kevin-wolf) | [linkedin](https://www.linkedin.com/in/kevinvillalobos/)
-
-### Diana Lescure - Design & UX
-
-Di (ass we call her) has in the technology industry for about 9 years, first as a web developer and now as a designer, she has been honing her craft for 4 years now in the field of user experience, graphic and advertisement design. Currently getting a degree in Design and Visual Communication at Veritas University in Costa Rica and where she realized design/ux is her true calling. Her projects have been selected to participate in local design showcases (such as "Encuentro de Diseño e Innovación" (EDI) years 2016 & 2017 and TedxPuraVida 2016).
-
-[github](@dianitica) | [linkedin](https://www.linkedin.com/in/dilescure/) | [website](http://dilescure.design/)
-
-### Jorge Murillo - Design & UX
-
-Jorge is a Web Designer currently specializing in User Interface Design with the University of Minnesota. An open minded, flexible and idealistic professional who's willing to see how deep the digital rabbit hole goes. When not at work, you'll surely find him playing with his kids or getting lost on his bike
-
-[github](@murillojorge) | [linkedin](https://www.linkedin.com/in/jmurillodev/)
+TBD  
 
 ### Want to Join DMeetup ?
 
