@@ -24,8 +24,10 @@
 		<img src="https://cdn.rawgit.com/eoscostarica/assets/574d20a6/logos/eoscolors-transparent.png" width="300">
 	</a>
 </p>
-
-# ÐMeetup
+<br/>
+<p align="left">
+	<img src="brand/logo/logo.svg" width="300px">
+</p>
 
 A decentralized platform and economic system that rewards the community members for organizing meetup events and workshops, both onsite and online. You will be able to build a reputation and get rewarded in crypto. There are also incentives for active members in a community group, not only for the organizers. The platform will allow to charge in crypto for your meetup events and workshops.
 
