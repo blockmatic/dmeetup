@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { hot } from 'react-hot-loader'
+import { Router } from '@reach/router'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+import { RootLayout } from 'core/layouts'
+import { MeetupsFeed } from 'meetups/routes'
 
-export default App;
+const App = props => (
+  <RootLayout>
+    <Router>
+      <MeetupsFeed path='/' />
+    </Router>
+  </RootLayout>
+)
+
+export default hot(module)(App)
