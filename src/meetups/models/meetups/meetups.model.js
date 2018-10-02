@@ -1,4 +1,4 @@
-import { sleep } from 'core/utils'
+import { sleep } from '../../../core/utils'
 import utils from './meetups.utils'
 import mocks from './meetups.mocks'
 

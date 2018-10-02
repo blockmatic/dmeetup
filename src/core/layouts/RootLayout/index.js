@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { injectGlobal } from 'styled-components'
 
-import { Header } from 'core/components'
+import { Header } from '../../components'
 import Wrapper from './Wrapper'
 
 injectGlobal`

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Card, Heading, Text } from 'core/components'
-import { meetups } from 'meetups/models'
+import { Card, Heading, Text } from '../../../core/components'
+import { meetups } from '../../models'
 import Placeholder from './Placeholder'
 
 const MeetupCard = ({ title, description }) => (

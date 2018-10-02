@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Trail } from 'react-spring'
 
-import { Grid } from 'core/components'
+import { Grid } from '../../../core/components'
 import Placeholder from './Placeholder'
 import { MeetupCard } from '../'
 
