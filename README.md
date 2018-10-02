@@ -44,7 +44,7 @@ A version of [Steemit](https://steemit.com) for on-site and online events and wo
   - [Whitepaper](#whitepaper)
   - [Contributing](#contributing)
   - [Bug Reporting](#bug-reporting)
-- [Technology](#technology)
+  - [Technology](#technology)
   - [Why EOS ?](#why-eos-)
   - [EOS.io Application Stack](#eosio-application-stack)
   - [Building EOS DApps](#building-eos-dapps)
@@ -67,6 +67,11 @@ It is a 100% open-source and community-driven project and we welcome contributio
 The main communication channels for organizing and collaborating are this repository and the [EOS Costa Rica Discord server](https://discord.gg/bBpQHym). Feel to join and ask as many questions you may have.
 
 [![Introduction to Blockchain](https://monosnap.com/image/GOx4Jv5DSd1H4cl1WDAftR5X5DMQI5.png)](https://www.youtube.com/watch?v=sYAktmG1NuA)
+
+### Installing
+1. `$ yarn install`
+1. `$ yarn start`
+This will launch your browser or you can navigate directly to `http://localhost:3000/` to use dmeetup.
 
 ## Whitepaper
 
