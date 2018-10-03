@@ -1,7 +1,7 @@
 [build]
   base    = "./services/frontend"
   command = "yarn build"
-  publish = "build"
+  publish = "./services/frontend/build"
 
 [context.production.environment]
   REACT_APP_STAGE = "production"
