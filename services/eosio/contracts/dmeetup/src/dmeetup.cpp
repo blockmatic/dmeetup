@@ -9,7 +9,6 @@ using namespace eosio;
 // Replace the contract class name when you start your own project
 class dmeetup : public eosio::contract {
   private:
-    
     /// @abi table
     struct meetupstruct {
       account_name  user;      // account name for the user
@@ -49,7 +48,6 @@ class dmeetup : public eosio::contract {
         });
       }
     }
-
 };
 
 // specify the contract name, and export a public action: update
