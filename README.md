@@ -29,10 +29,10 @@
 	<img src="brand/logo/logo.svg" width="300px">
 </p>
 
-A decentralized platform and economic system that rewards the community members for organizing meetup events and workshops, both onsite and online. You will be able to build a reputation and get rewarded in crypto. There are also incentives for active members in a community group, not only for the organizers. The platform will allow to charge in crypto for your meetup events and workshops.
+A decentralized platform and economic system that rewards community members for organizing and attending meetups and workshops. You will be able to build a reputation, get rewarded and charge a fee in crypto. 
 
-It's a decentralized version of [Meetup](https://meetup.com) with token incentives for the community members.  
-A version of [Steemit](https://steemit.com) for on-site and online events and workshops.
+It's a decentralized version of [Meetup](https://meetup.com) with token incentives for the members.  
+A version of [Steemit](https://steemit.com) for events and workshops.
 
 ## Contents
 
@@ -40,38 +40,33 @@ A version of [Steemit](https://steemit.com) for on-site and online events and wo
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [Getting Started](#getting-started)
-  - [Whitepaper](#whitepaper)
-  - [Contributing](#contributing)
-  - [Bug Reporting](#bug-reporting)
-  - [Technology](#technology)
-  - [Why EOS ?](#why-eos-)
-  - [EOS.io Application Stack](#eosio-application-stack)
-  - [Building EOS DApps](#building-eos-dapps)
-  - [EOS Documentation & Resources](#eos-documentation--resources)
-  - [EOS Storage](#eos-storage)
-  - [IPFS Documentation](#ipfs-documentation)
-  - [React Documentation](#react-documentation)
-  - [Core Team](#core-team)
-  - [About EOS Costa Rica](#about-eos-costa-rica)
-  - [License](#license)
+- [Getting Started](#getting-started)
+- [Whitepaper](#whitepaper)
+- [Contributing](#contributing)
+- [Project Directory Structure](#project-directory-structure)
+- [React App Documentation](#react-app-documentation)
+  - [Start Up](#start-up)
+- [Continuous Integration Process](#continuous-integration-process)
+- [Why EOS ?](#why-eos-)
+- [EOS.io Application Stack](#eosio-application-stack)
+- [EOS Documentation & Resources](#eos-documentation--resources)
+- [EOS Storage](#eos-storage)
+- [IPFS Documentation](#ipfs-documentation)
+- [About EOS Costa Rica](#about-eos-costa-rica)
+- [License](#license)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Getting Started
 
-dmeetup is an EOS and IPFS based decentralized application that allows people to publish on-site and online meetup events and workshops. You will be able to build a reputation and get rewarded in crypto. The platform will also allow you to charge in crypto for your workshops. We envision a reputation system similar to steemit.
+dmeetup is an EOS dApp that allows people to organize meetups and workshops. 
 
 It is a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community.
 
 The main communication channels for organizing and collaborating are this repository and the [EOS Costa Rica Discord server](https://discord.gg/bBpQHym). Feel to join and ask as many questions you may have.
 
-[![Introduction to Blockchain](https://monosnap.com/image/GOx4Jv5DSd1H4cl1WDAftR5X5DMQI5.png)](https://www.youtube.com/watch?v=sYAktmG1NuA)
-
-### Installing
-1. `$ yarn install`
-1. `$ yarn start`
-This will launch your browser or you can navigate directly to `http://localhost:3000/` to use dmeetup.
+At [learn.eoscostarica.io](https://learn.eoscostarica.io) you can find curated Blockchain and EOS learning resources. 
 
 ## Whitepaper
 
@@ -85,24 +80,67 @@ The whitepaper and economic model are a work in progress
 
 We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
 
-We follow the [open source collaborative ettiquete](https://github.com/rstacruz/collaborative-etiquette/blob/master/README.md#top), the [standardjs code style](https://standardjs.com) and we favor [functional javascript programming](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84) and declative code style.
+We follow EOS Costa Rica's Open Source Contributing Guidelines. https://learn.eoscostarica.io/open-source/
 
-Read the [contributing guidelines](CONTRIBUTING.md) for details.
+Our weekly sync call is every Monday 7pm-8pm Costa Rica / Central Standard Time at [meet.eoscostarica.io](https:/meet.eoscostarica.io).
 
-Our weekly sync call is every Monday 7pm-8pm CST on google hangouts. [Go to hangouts room](http://bit.ly/dmeetup-call)
+Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/dmeetup/issues).
 
-There a many reasons to get involved in an open source project like this one. If haven't participated in an open source project before and you are still not sure whether you should, this is presentation is for you. [eoscostarica-oss.pdf](https://gaboesquivel.com/slides/eoscostarica-oss.pdf)
+## Project Directory Structure
 
-## Bug Reporting
+```
+.
+├── docs/ .............................................. documentation files and media
+├── brand/ ............................................. all branding and identity
+├── services/ .......................................... documentation files and media
+|	├── eosio/ ......................................... eosio blockchain service
+|	|	├── config/ .................................... eosio service configuration
+|	|	├── contracts/ ................................. dmeetup smart contracts 
+|	└── frontend/ ...................................... reactjs frontend
+|		├── public/ .................................... static and public files
+|		├── src/ ....................................... reactjs views and components
+|		├── config-overrides.js ........................ configuration overrides for `cra`
+|		├── .env ....................................... environment variables
+|		├── .eslintrc .................................. code style rules
+|		└── package.json ............................... dependencies manifest
+├── docker-compose.yaml ................................ docker compose for local dev
+├── CONTRIBUTING.md .................................... contributing guidelines
+├── LICENSE ............................................ project license
+├── README.md .......................................... project homepage
+├── netlify.toml ....................................... netlify configuration file
+└── .travis.yml ........................................ travis ci configuration file
+```
 
-Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/dmeetup/issues). No possible bug report is too small.
+## React App Documentation
 
-# Technology
+The React.js DApp was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-- EOS
-- IPFS
-- React.js
-- Docker for the dev environment
+See [full create-react-app documentation](docs/create-react-app.md)
+
+[![Why React.js](https://monosnap.com/image/thWXLTTerX96Rnn8IhqujvNvlx5wa1.png)](https://www.youtube.com/watch?v=WsmgDnHOWh4)
+
+### Start Up
+
+1. `$ yarn`
+2. `$ yarn start`
+
+This will launch your browser or you can navigate directly to `http://localhost:3000/` to use dmeetup.
+
+**ÐMeetup App Components**
+
+- [react-app-rewired](https://github.com/timarney/react-app-rewired) for tweaking `create-react-app` configuration without ejecting
+- [reach-router](https://github.com/reach/router) for a more accessible router.
+- state management with [rematch](https://github.com/rematch/rematch) to use `redux` best practices without all the boilerplate.
+- [grid-styled](https://github.com/jxnblk/grid-styled) for a flexbox grid built on top of `styled-components` and [system-components](https://github.com/jxnblk/styled-system/tree/master/system-components) for a consistent design system.
+
+## Continuous Integration Process
+
+We follow a continuous integration process based on Github flow that leverages the following tools:
+
+- [TravisCI](https://travis-ci.org/) to run test and code style checks
+- [Netlify](https://netlify.com) for continuous delivery to the stanging server and creation pull request specific environments for testing. awesome!
+- [Code Factor](https://codefactor.io) for automated code quality reviews.
+
 
 ## Why EOS ?
 
@@ -117,11 +155,6 @@ Please report bugs big and small by [opening an issue](https://github.com/eoscos
 
 ![](https://github.com/eoscostarica/dmeetup/blob/master/docs/img/eos-application-stack.png)  
 source https://steemit.com/eos/@eosio/introducing-eos-io-application-stack
-
-## EOS Documentation & Resources
-
-- https://developers.eos.io
-- https://github.com/eoscostarica/eos-dev-learning-resources
 
 ## EOS Storage
 
@@ -143,53 +176,6 @@ In the mean time we are going to have use IPFS directly.
 
 [![IFPS Simply Explained](https://monosnap.com/image/PW76DIRPGLOmtWyPEiXK2NvsDHiR4x.png)](https://www.youtube.com/watch?v=5Uj6uR3fp-U)
 
-## React Documentation
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-[docs/create-react-app.md](docs/create-react-app.md)
-
-[![Why React.js](https://monosnap.com/image/thWXLTTerX96Rnn8IhqujvNvlx5wa1.png)](https://www.youtube.com/watch?v=WsmgDnHOWh4)
-
-**ÐMeetup App Components**
-
-- [react-app-rewired](https://github.com/timarney/react-app-rewired) for tweaking `create-react-app` configuration without ejecting
-- [reach-router](https://github.com/reach/router) for a more accessible router.
-- state management with [rematch](https://github.com/rematch/rematch) to use `redux` best practices without all the boilerplate.
-- [grid-styled](https://github.com/jxnblk/grid-styled) for a flexbox grid built on top of `styled-components` and [system-components](https://github.com/jxnblk/styled-system/tree/master/system-components) for a consistent design system.
-
-## Project Directory Structure
-
-```
-.
-├── docs/ .............................................. documentation files and media
-├── public/ ............................................ static and public files
-├── src/ ............................................... application source code (we will cover in detail soon)
-├── CONTRIBUTING.md .................................... contributing guidelines
-├── LICENSE ............................................ project license
-├── README.md .......................................... project homepage
-├── package.json ....................................... dependencies manifest
-├── docker-compose.yaml ................................ docker compose for local smart contracts development
-├── config-overrides.js ................................ configuration overrides for `create-react-app`
-├── netlify.toml ....................................... netlify configuration file
-├── .env ............................................... environment variables (for local development)
-├── .eslintrc .......................................... code style rules
-└── .travis.yml ........................................ travis ci configuration file
-```
-
-## Continuous Integration Process
-
-We follow a continuous integration process based on Github flow that leverages the following tools:
-
-- [TravisCI](https://travis-ci.org/) to run test and code style checks
-- [Netlify](https://netlify.com) for continuous delivery to the stanging server and creation pull request specific environments for testing. awesome!
-- [Code Factor](https://codefactor.io) for automated code quality reviews.
-
-## Maintainers
-
-- Project Lead [@gaboesquivel](https://github.com/gaboesquivel).
-- UI/UX [@murillojorge](https://github.com/murillojorge).
-
 ## About EOS Costa Rica
 
 EOS Blockchain is aiming to become a decentralized operating system which can support large-scale decentralized applications.
@@ -210,8 +196,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;"/><br /><sub><b>Gabo Esquivel</b></sub>](https://gaboesquivel.com)<br />[🤔](#ideas-gaboesquivel "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Code") [👀](#review-gaboesquivel "Reviewed Pull Requests") [📹](#video-gaboesquivel "Videos") [📢](#talk-gaboesquivel "Talks") | [<img src="https://avatars1.githubusercontent.com/u/1179619?v=4" width="100px;"/><br /><sub><b>Jorge Murillo</b></sub>](https://github.com/murillojorge)<br />[🤔](#ideas-murillojorge "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Documentation") [🎨](#design-murillojorge "Design") [💻](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Code") [👀](#review-murillojorge "Reviewed Pull Requests") | [<img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;"/><br /><sub><b>Kevin Wolf</b></sub>](https://github.com/kevinwolfcr)<br />[🤔](#ideas-kevinwolfcr "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Code") [👀](#review-kevinwolfcr "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/5632966?v=4" width="100px;"/><br /><sub><b>Xavier Fernandez</b></sub>](https://github.com/xavier506)<br />[🤔](#ideas-xavier506 "Ideas, Planning, & Feedback") [📝](#blog-xavier506 "Blogposts") [📢](#talk-xavier506 "Talks") [🚇](#infra-xavier506 "Infrastructure (Hosting, Build-Tools, etc)") | [<img src="https://avatars2.githubusercontent.com/u/40245170?v=4" width="100px;"/><br /><sub><b>Edgar Fernandez</b></sub>](http://www.eoscostarica.io)<br />[🤔](#ideas-edgar-eoscostarica "Ideas, Planning, & Feedback") [📝](#blog-edgar-eoscostarica "Blogposts") [📢](#talk-edgar-eoscostarica "Talks") | [<img src="https://avatars2.githubusercontent.com/u/13205620?v=4" width="100px;"/><br /><sub><b>Rubén Abarca Navarro</b></sub>](https://github.com/rubenabix)<br />[🤔](#ideas-rubenabix "Ideas, Planning, & Feedback") [👀](#review-rubenabix "Reviewed Pull Requests") |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;"/><br /><sub><b>Gabo Esquivel</b></sub>](https://gaboesquivel.com)<br />[🤔](#ideas-gaboesquivel "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Code") [👀](#review-gaboesquivel "Reviewed Pull Requests") [📹](#video-gaboesquivel "Videos") [📢](#talk-gaboesquivel "Talks") | [<img src="https://avatars1.githubusercontent.com/u/1179619?v=4" width="100px;"/><br /><sub><b>Jorge Murillo</b></sub>](https://github.com/murillojorge)<br />[🤔](#ideas-murillojorge "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Documentation") [🎨](#design-murillojorge "Design") [💻](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Code") [👀](#review-murillojorge "Reviewed Pull Requests") | [<img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;"/><br /><sub><b>Kevin Wolf</b></sub>](https://github.com/kevinwolfcr)<br />[🤔](#ideas-kevinwolfcr "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Code") [👀](#review-kevinwolfcr "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/5632966?v=4" width="100px;"/><br /><sub><b>Xavier Fernandez</b></sub>](https://github.com/xavier506)<br />[🤔](#ideas-xavier506 "Ideas, Planning, & Feedback") [📝](#blog-xavier506 "Blogposts") [📢](#talk-xavier506 "Talks") [🚇](#infra-xavier506 "Infrastructure (Hosting, Build-Tools, etc)") | [<img src="https://avatars2.githubusercontent.com/u/40245170?v=4" width="100px;"/><br /><sub><b>Edgar Fernandez</b></sub>](http://www.eoscostarica.io)<br />[🤔](#ideas-edgar-eoscostarica "Ideas, Planning, & Feedback") [📝](#blog-edgar-eoscostarica "Blogposts") [📢](#talk-edgar-eoscostarica "Talks") | [<img src="https://avatars2.githubusercontent.com/u/13205620?v=4" width="100px;"/><br /><sub><b>Rubén Abarca Navarro</b></sub>](https://github.com/rubenabix)<br />[🤔](#ideas-rubenabix "Ideas, Planning, & Feedback") [👀](#review-rubenabix "Reviewed Pull Requests") | [<img src="https://avatars1.githubusercontent.com/u/1449049?v=4" width="100px;"/><br /><sub><b>Friedger Müffke</b></sub>](https://github.com/friedger)<br />[💻](https://github.com/eoscostarica/dmeetup/commits?author=friedger "Code") [🐛](https://github.com/eoscostarica/dmeetup/issues?q=author%3Afriedger "Bug reports") [💡](#example-friedger "Examples") |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
