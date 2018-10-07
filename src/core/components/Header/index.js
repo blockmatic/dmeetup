@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from 'grid-styled'
 
-import { Grid, Container, Heading } from 'core/components'
+import { Grid, Container, Heading } from '../../components'
 
 const LogoStyle = {
   width: '30%',

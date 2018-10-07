@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactPlaceholder from 'react-placeholder'
 
-import { Container, Grid, Heading } from 'core/components'
-import { MeetupsList } from 'meetups/components'
+import { Container, Grid, Heading } from '../../../core/components'
+import { MeetupsList } from '../../../meetups/components'
 
 const Feed = ({ isLoading, meetups }) => (
   <Grid is={Container}>
