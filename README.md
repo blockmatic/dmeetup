@@ -80,7 +80,7 @@ The whitepaper and economic model are a work in progress
 
 We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
 
-We follow EOS Costa Rica's Open Source Contributing Guidelines. https://learn.eoscostarica.io/open-source/
+We follow EOS Costa Rica's Open Source Contributing Guidelines. https://developers.eoscostarica.io/docs/open-source-guidelines
 
 Our weekly sync call is every Monday 7pm-8pm Costa Rica / Central Standard Time at [meet.eoscostarica.io](https:/meet.eoscostarica.io).
 
@@ -178,11 +178,9 @@ In the mean time we are going to have use IPFS directly.
 
 ## About EOS Costa Rica
 
-EOS Blockchain is aiming to become a decentralized operating system which can support large-scale decentralized applications.
+We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable internet resources to meet such an important challenge.
 
 EOS Costa Rica supports the EOS.io community by maintaining and contributing to open source initiatives, meetups and workshops.
-
-We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable internet resources to meet such an important challenge.
 
 [eoscostarica.io](https://eoscostarica.io)
 
