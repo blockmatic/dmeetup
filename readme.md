@@ -29,7 +29,7 @@ A decentralized platform and economic system that rewards community members for 
 It's a version of [Meetup](https://meetup.com) with token incentives for the members.  
 A version of [Steemit](https://steemit.com) for meetups.
 
-Users are incentivized to attend events and a value to meetup groups. In order to rsvp an event a user have to stake a certain ammound of EOS, the EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
+Users are incentivized to attend events and add value to meetup groups. In order to rsvp an event a user have to stake a certain ammound of EOS, the EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
 
 The platform rewards the organizers, speakers and members through the MEETUP reputation token. 
 
