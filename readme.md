@@ -19,20 +19,29 @@
 	</a>
 </p>
 
-<p align="center">
-	<a href="https://eoscostarica.io">
-		<img src="https://cdn.rawgit.com/eoscostarica/assets/574d20a6/logos/eoscolors-transparent.png" width="300">
-	</a>
-</p>
 <br/>
-<p align="left">
-	<img src="brand/logo/logo.svg" width="300px">
+<p align="center">
+	<img src="brand/logo/logo.svg" width="500px">
 </p>
 
 A decentralized platform and economic system that rewards community members for organizing and attending meetups and workshops. You will be able to build a reputation, get rewarded and charge a fee in crypto. 
 
-It's a decentralized version of [Meetup](https://meetup.com) with token incentives for the members.  
-A version of [Steemit](https://steemit.com) for events and workshops.
+It's a version of [Meetup](https://meetup.com) with token incentives for the members.  
+A version of [Steemit](https://steemit.com) for meetups.
+
+Users are incentivized to attend events and a value to meetup groups. In order to rsvp an event a user have to stake a certain ammound of EOS, the EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
+
+The platform rewards the organizers, speakers and members through the MEETUP reputation token. 
+
+Each meetup group is an idependent contract with it's own balance.
+
+Companies can sponsor meetup by executign the sponsor_event action on the meetup group contract. 
+
+By financially and reputationally incentivising the meetup groups organizers and active members of these communities we aim to create a platform that will accelerate knowledge sharing and community groups sustainability, where members are fairly rewarded for their efforts and contributions to the communities.
+
+It is a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community.
+
+The main communication channels for organizing and collaborating are this repository and the [EOS Costa Rica Discord server](https://discord.gg/bBpQHym). Feel to join and ask as many questions you may have.
 
 ## Contents
 
@@ -40,93 +49,90 @@ A version of [Steemit](https://steemit.com) for events and workshops.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting Started](#getting-started)
-- [Whitepaper](#whitepaper)
-- [Contributing](#contributing)
-- [Project Directory Structure](#project-directory-structure)
-- [React App Documentation](#react-app-documentation)
-  - [Start Up](#start-up)
+- [Architecture](#architecture)
+- [Development Setup](#development-setup)
+  - [Global Dependencies](#global-dependencies)
+  - [EOS Local Network](#eos-local-network)
+- [Directory Structure](#directory-structure)
+- [React Documentation](#react-documentation)
 - [Continuous Integration Process](#continuous-integration-process)
-- [Why EOS ?](#why-eos-)
-- [EOS.io Application Stack](#eosio-application-stack)
-- [EOS Documentation & Resources](#eos-documentation--resources)
-- [EOS Storage](#eos-storage)
-- [IPFS Documentation](#ipfs-documentation)
+- [Contributing](#contributing)
 - [About EOS Costa Rica](#about-eos-costa-rica)
 - [License](#license)
 - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Getting Started
+## Architecture
 
-dmeetup is an EOS dApp that allows people to organize meetups and workshops. 
+This project is based on [EOS DApp Boilerplate](https://github.com/eoscostarica/eos-dapp-boilerplate).
 
-It is a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community.
+<p align="center">
+	<img src="docs/architecture.png" width="600">
+</p>
 
-The main communication channels for organizing and collaborating are this repository and the [EOS Costa Rica Discord server](https://discord.gg/bBpQHym). Feel to join and ask as many questions you may have.
+## Development Setup
 
-At [learn.eoscostarica.io](https://learn.eoscostarica.io) you can find curated Blockchain and EOS learning resources. 
+Basic knowledge about Docker, Docker Compose, EOS and NodeJS is required.
 
-## Whitepaper
+- Video tutorial [Docker Containers | Learn Docker Basics in 30 Mins](https://www.youtube.com/watch?v=0kwXLcwUw0Q)
 
-The whitepaper and economic model are a work in progress
+### Global Dependencies
 
-* https://github.com/eoscostarica/dmeetup/issues/4
-* https://github.com/eoscostarica/dmeetup/issues/27
-* https://github.com/eoscostarica/dmeetup/blob/whitepaper/docs/whitepaper.md
+- Docker https://docs.docker.com/install/.  
+  At least 10GB RAM (Docker -> Preferences -> Advanced -> Memory -> 10GB or above)
 
-## Contributing
+### EOS Local Network
 
-We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
+Make sure you are running [EOSLOCAL](https://github.com/eoscostarica/eos-local).
 
-We follow EOS Costa Rica's Open Source Contributing Guidelines. https://developers.eoscostarica.io/docs/open-source-guidelines
-
-Our weekly sync call is every Monday 7pm-8pm Costa Rica / Central Standard Time at [meet.eoscostarica.io](https:/meet.eoscostarica.io).
-
-Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/dmeetup/issues).
-
-## Project Directory Structure
+## Directory Structure
 
 ```
 .
 ├── docs/ .............................................. documentation files and media
-├── brand/ ............................................. all branding and identity
-├── services/ .......................................... documentation files and media
-|	├── eosio/ ......................................... eosio blockchain service
-|	|	├── config/ .................................... eosio service configuration
-|	|	├── contracts/ ................................. dmeetup smart contracts 
-|	└── frontend/ ...................................... reactjs frontend
-|		├── public/ .................................... static and public files
-|		├── src/ ....................................... reactjs views and components
-|		├── config-overrides.js ........................ configuration overrides for `cra`
-|		├── .env ....................................... environment variables
-|		├── .eslintrc .................................. code style rules
-|		└── package.json ............................... dependencies manifest
+├── contracts/ ......................................... eos smart contracts 
+├── services/ .......................................... microservices
+|   ├── demux/ ......................................... demux-js service
+|   |   ├── utils/ ..................................... general utilities
+|   |   ├── src/ ....................................... application biz logic 
+|   |   ├── Dockerfile ................................. service image spec 
+|   |   ├── pm2.config.js .............................. process specs for pm2
+|   |   ├── tsconfig.json .............................. tslint config
+|   |   ├── tslint.json ................................ code style rules
+|   |   └── package.json ............................... service dependencies manifest
+|   |
+|   ├── postgres/ ...................................... postgres db service
+|   |   └── migrations/ ................................ flyway migrations
+|   |
+|   ├── hasura/ ........................................ graphql endpoint service
+|   |   └── migrations/ ................................ hasura migrations
+|   |
+|   └── frontend/ ...................................... reactjs frontend
+|       ├── public/ .................................... static and public files
+|       ├── src/ ....................................... reactjs views and components
+|       ├── config-overrides.js ........................ configuration overrides for `cra`
+|       ├── .env ....................................... environment variables
+|       ├── .eslintrc .................................. code style rules
+|       └── package.json ............................... service dependencies manifest
+|   
 ├── docker-compose.yaml ................................ docker compose for local dev
-├── CONTRIBUTING.md .................................... contributing guidelines
-├── LICENSE ............................................ project license
-├── README.md .......................................... project homepage
-├── netlify.toml ....................................... netlify configuration file
-└── .travis.yml ........................................ travis ci configuration file
+├── contributing.md .................................... contributing guidelines
+├── license ............................................ project license
+├── makefile ........................................... make tasks manifest
+├── readme.md .......................................... project documentation
+├── netlify.toml ....................................... netlify config file
+├── .travis.yml ........................................ travis ci config file
+└── .editorconfig ...................................... common text editor configs
 ```
 
-## React App Documentation
+## React Documentation
 
-The React.js DApp was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+The React client was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 See [full create-react-app documentation](docs/create-react-app.md)
 
-[![Why React.js](https://monosnap.com/image/thWXLTTerX96Rnn8IhqujvNvlx5wa1.png)](https://www.youtube.com/watch?v=WsmgDnHOWh4)
-
-### Start Up
-
-1. `$ yarn`
-2. `$ yarn start`
-
-This will launch your browser or you can navigate directly to `http://localhost:3000/` to use dmeetup.
-
-**ÐMeetup App Components**
+**App Components**
 
 - [react-app-rewired](https://github.com/timarney/react-app-rewired) for tweaking `create-react-app` configuration without ejecting
 - [reach-router](https://github.com/reach/router) for a more accessible router.
@@ -141,42 +147,24 @@ We follow a continuous integration process based on Github flow that leverages t
 - [Netlify](https://netlify.com) for continuous delivery to the stanging server and creation pull request specific environments for testing. awesome!
 - [Code Factor](https://codefactor.io) for automated code quality reviews.
 
+## Contributing
 
-## Why EOS ?
+We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
 
-[![Why EOS](https://monosnap.com/image/CDcIfufeYs0rJPH2viNkCJSPV6bY4O.png)](https://www.youtube.com/watch?v=3kqkTYqTvDA)
+We follow EOS Costa Rica's Open Source Contributing Guidelines. https://developers.eoscostarica.io/docs/open-source-guidelines
 
-![EOS Network](https://github.com/eoscostarica/dmeetup/blob/master/docs/img/eos-network.jpg)
+Our weekly sync call is every Monday 7pm-8pm Costa Rica / Central Standard Time at [meet.eoscostarica.io](https:/meet.eoscostarica.io).
 
-[![The REAL Difference Between Ethereum and EOS](https://monosnap.com/image/Asv5NiYI9Il7pUegy67KT6TqnqqPgN.png)](https://www.youtube.com/watch?v=YmwZ3xvIyN4)
-
-
-## EOS.io Application Stack
-
-![](https://github.com/eoscostarica/dmeetup/blob/master/docs/img/eos-application-stack.png)  
-source https://steemit.com/eos/@eosio/introducing-eos-io-application-stack
-
-## EOS Storage
-
-- [5 Reasons Why EOS Storage Will Change Data Storage Forever](https://www.youtube.com/watch?v=7mFzb5SqS9U)
-- [EOS.IO Storage White Paper](https://steemit.com/eos/@eosio/eos-io-storage-white-paper-now-available)
-
-EOS Storage will allow you to host dApps thru EOS APIs, this hasn't been implemented yet, though.
-In the mean time we are going to have use IPFS directly.
-
-- https://ipfs.io/docs/
-- https://github.com/ipfs/awesome-ipfs
-
-## IPFS Documentation
-
-- https://github.com/ipfs/ipfs#how-ipfs-work
-- https://ipfs.io/docs/
-- https://beta.docs.ipfs.io
-- https://github.com/ipfs/js-ipfs
-
-[![IFPS Simply Explained](https://monosnap.com/image/PW76DIRPGLOmtWyPEiXK2NvsDHiR4x.png)](https://www.youtube.com/watch?v=5Uj6uR3fp-U)
+Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/dmeetup/issues).
 
 ## About EOS Costa Rica
+
+<p align="center">
+	<a href="https://eoscostarica.io">
+		<img src="https://cdn.rawgit.com/eoscostarica/assets/574d20a6/logos/eoscolors-transparent.png" width="300">
+	</a>
+</p>
+<br/>
 
 We challenge ourselves to provide the EOS platform with a strong geographical and political diversity by running the most robust EOS Block Producer possible from Costa Rica; We pledge to leverage our talent, experience, and sustainable internet resources to meet such an important challenge.
 

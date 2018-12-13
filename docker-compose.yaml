@@ -1,20 +1,96 @@
-version: "3"
+version: "3.5"
 
 services:
-  eosiodev:
-    build:
-      context: ./services/eosio
-      dockerfile: Dockerfile
-    image: dmeetup/eosdev
-    stop_grace_period: 3m0s
-    command: /opt/eosio/bin/nodeos --config-dir /opt/application/config --data-dir /root/.local/share -e
-    ports:
-      - "8888:8888"
-      - "9830:9876"
+  postgres:
+    container_name: dmeetup_postgres
+    image: postgres:10.4
     volumes:
-      - eosiodevapp:/root/.local/share
-      - ./services/eos-dev:/opt/application
+      - dmeetup-postgres-data-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      DB_NAME: dmeetup
+      DB_USER: user
+      DB_PASSWORD: pass
+      POSTGRES_DB: dmeetup
 
+  pgweb:
+    container_name: dmeetup_pgweb
+    image: sosedoff/pgweb:latest
+    restart: always
+    ports:
+      - "8082:8081"
+    environment:
+      DATABASE_URL: postgres://user:pass@postgres:5432/dmeetup?sslmode=disable
+    depends_on:
+      - postgres
+
+  flyway:
+    container_name: dmeetup_flyway
+    image: boxfuse/flyway:5.2.1
+    command: -url=jdbc:postgresql://postgres:5432/dmeetup -user=user -password=pass -connectRetries=60 migrate
+    volumes:
+      - ./services/postgres/migrations:/flyway/sql
+    depends_on:
+      - postgres
+
+  demux:
+    container_name: dmeetup_demux
+    build:
+      context: ./services/demux
+      dockerfile: ./Dockerfile
+      args:
+        SERVICE: "demux"
+    image: dmeetup/demux
+    volumes:
+      - ./services/demux:/opt/application # mount demux service folder
+      - /opt/application/node_modules # prevents host/container conflicts
+    depends_on:
+      - postgres
+    environment:
+      DB_USER: user
+      DB_PASSWORD: pass
+      DB_PORT: 5432
+      DB_NAME: dmeetup
+      DB_HOST: postgres
+      DB_SCHEMA: public
+      CHAIN_HOST: "http://eosio:8888"
+      CHAIN_INIT_BLOCK: 10
+      MONGO_URI: "mongodb://mongo:27017"
+      MONGO_DB: EOSFN
+      WAIT_HOSTS: postgres:5432, mongo:27017
+      WAIT_HOSTS_TIMEOUT: 60
+    ports:
+      - "3030:3030"
+    networks:
+      default:
+      eoslocal:
+
+  hasura:
+    container_name: dmeetup_hasura
+    image: hasura/graphql-engine:v1.0.0-alpha31.cli-migrations
+    ports:
+      - "8088:8080"
+    depends_on:
+      - postgres
+    restart: always
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://user:pass@postgres:5432/dmeetup?sslmode=disable
+      HASURA_GRAPHQL_MIGRATIONS_DIR: /hasura-migrations
+    volumes:
+      - ./services/hasura/migrations:/hasura-migrations #  mount hasura migrations folder
+    command:
+      - graphql-engine
+      - serve
+      - --enable-console
 
 volumes:
-  eosiodevapp:
+  dmeetup-postgres-data-volume:
+
+networks:
+  default:
+    name: dmeetup
+  eoslocal:
+    external: true
