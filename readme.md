@@ -24,24 +24,23 @@
 	<img src="brand/logo/logo.svg" width="500px">
 </p>
 
-A decentralized platform and economic system that rewards community members for organizing and attending meetups and workshops. You will be able to build a reputation, get rewarded and charge a fee in crypto. 
-
-It's a version of [Meetup](https://meetup.com) with token incentives for the members.  
-A version of [Steemit](https://steemit.com) for meetups.
-
-Users are incentivized to attend events and add value to meetup groups. In order to rsvp an event a user have to stake a certain ammound of EOS, the EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
-
-The platform rewards the organizers, speakers and members through the MEETUP reputation token. 
-
-Each meetup group is an idependent contract with it's own balance.
-
-Companies can sponsor meetup by executign the sponsor_event action on the meetup group contract. 
+DMeetup is decentralized autonomous community and economic system that rewards community members for organizing and attending meetups and workshops. 
 
 By financially and reputationally incentivising the meetup groups organizers and active members of these communities we aim to create a platform that will accelerate knowledge sharing and community groups sustainability, where members are fairly rewarded for their efforts and contributions to the communities.
 
-It is a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community.
+Users are incentivized to attend events and add value to meetup groups. In order to rsvp an event a user have to stake  EOS and you can get it back the day of the event if you attend. The EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
 
-The main communication channels for organizing and collaborating are this repository and the [EOS Costa Rica Discord server](https://discord.gg/bBpQHym). Feel to join and ask as many questions you may have.
+You will be able to build a reputation, get rewarded and charge a fee in crypto. The platform rewards the organizers, speakers and active members through the MEETUP reputation token. 
+
+DMeetup a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community. People who contribute to the Meetup project will share the DAC profits in proportion to their contributions.
+
+Each meetup group is an independent DAC with it's own balance.
+
+Companies can sponsor meetups events and groups with EOS and get publicity on the event and group.
+
+The profits of each meetup group gets distributed among all members proportionally to their contributions to the group.
+
+The value of their contributions will be calculated based on the activity and their DMeetup reputation within a period of time.
 
 ## Contents
 
@@ -49,10 +48,8 @@ The main communication channels for organizing and collaborating are this reposi
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Architecture](#architecture)
 - [Development Setup](#development-setup)
   - [Global Dependencies](#global-dependencies)
-  - [EOS Local Network](#eos-local-network)
 - [Directory Structure](#directory-structure)
 - [React Documentation](#react-documentation)
 - [Continuous Integration Process](#continuous-integration-process)
@@ -62,14 +59,6 @@ The main communication channels for organizing and collaborating are this reposi
 - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Architecture
-
-This project is based on [EOS DApp Boilerplate](https://github.com/eoscostarica/eos-dapp-boilerplate).
-
-<p align="center">
-	<img src="docs/architecture.png" width="600">
-</p>
 
 ## Development Setup
 
@@ -81,10 +70,6 @@ Basic knowledge about Docker, Docker Compose, EOS and NodeJS is required.
 
 - Docker https://docs.docker.com/install/.  
   At least 10GB RAM (Docker -> Preferences -> Advanced -> Memory -> 10GB or above)
-
-### EOS Local Network
-
-Make sure you are running [EOSLOCAL](https://github.com/eoscostarica/eos-local).
 
 ## Directory Structure
 
