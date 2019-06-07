@@ -1,18 +1,9 @@
 <p align="center">
-	<a href="https://travis-ci.org/eoscostarica/dmeetup">
-		<img src="https://travis-ci.org/eoscostarica/dmeetup.svg?branch=master" alt="TravisCI">
-	</a>
-	<a href="http://standardjs.com">
-		<img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="StandardJS">
-	</a>
 	<a href="https://git.io/col">
 		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
 	</a>
-	<a href="https://discord.gg/bBpQHym">
-		<img src="https://img.shields.io/discord/447118387118735380.svg?logo=discord" alt="chat on Discord">
-	</a>
-	<a href="https://twitter.com/intent/follow?screen_name=eoscostarica">
-		<img src="https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter" alt="follow on Twitter">
+	<a href="https://twitter.com/intent/follow?screen_name=puravidaeos">
+		<img src="https://img.shields.io/twitter/follow/puravidaeos.svg?style=social&logo=twitter" alt="follow on Twitter">
 	</a>
 	<a href="#">
 		<img src="https://img.shields.io/dub/l/vibe-d.svg" alt="MIT">
@@ -134,30 +125,15 @@ We follow a continuous integration process based on Github flow that leverages t
 
 ## Contributing
 
-We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/eoscostarica/dmeetup/projects/1).
+We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/puravidaeos/dmeetup/projects/1).
 
 We follow EOS Costa Rica's Open Source Contributing Guidelines. https://developers.eoscostarica.io/docs/open-source-guidelines
 
-Our weekly sync call is every Monday 7pm-8pm Costa Rica / Central Standard Time at [meet.eoscostarica.io](https:/meet.eoscostarica.io).
-
-Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/dmeetup/issues).
-
-## About EOS Costa Rica
-
-<p align="center">
-	<a href="https://eoscostarica.io">
-		<img src="https://cdn.rawgit.com/eoscostarica/assets/574d20a6/logos/eoscolors-transparent.png" width="300">
-	</a>
-</p>
-<br/>
-
-EOS Costa Rica is an independently-owned, self-funded, bare-metal genesis block producer that provides stable and secure infrastructure for EOSIO blockchains. We support open source software for our community while offering enterprise solutions and custom smart contract development for our clients.
-
-[eoscostarica.io](https://eoscostarica.io)
+Please report bugs big and small by [opening an issue](https://github.com/puravidaeos/dmeetup/issues).
 
 ## License
 
-MIT © [EOS Costa Rica](https://eoscostarica.io)  
+MIT © [Pura Vida EOS](https://puravidaeos.one)  
 
 ## Contributors
 
