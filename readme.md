@@ -133,7 +133,7 @@ Please report bugs big and small by [opening an issue](https://github.com/puravi
 
 ## License
 
-MIT © [Pura Vida EOS](https://puravidaeos.one)  
+MIT © [Pura Vida DAC](https://puravidadac.one)  
 
 ## Contributors
 
