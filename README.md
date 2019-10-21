@@ -20,7 +20,41 @@
 	<img src="assets/dmeetup-logo.svg" width="500px">
 </p>
 
-__DMeetup is decentralized autonomous community and economic system that rewards community members for organizing and attending meetups and workshops.__ 
+DMeetup is decentralized autonomous community and economic system that rewards community members for organizing and attending meetups and workshops.
+
+## Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Problem](#problem)
+- [Solution & Product](#solution--product)
+- [MVP](#mvp)
+- [Token Model and Distribution](#token-model-and-distribution)
+- [dMeetup DAC](#dmeetup-dac)
+- [Growth Model](#growth-model)
+- [Getting Started](#getting-started)
+- [Directory Structure](#directory-structure)
+- [License](#license)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
+- [Bug Reporting](#bug-reporting)
+- [License](#license-1)
+- [Become a Supporter](#become-a-supporter)
+- [Pura Vida DAC](#pura-vida-dac)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Problem
+
+A lot people run communities and workshops and have to pay centralized solutions to publish and promote their events. Many of these solutions don't make easy to manage reservation and charge for the participation, and if they do most platform don't support cryptocurrencies yet, so you need to charge through centralized payment gateways.
+
+It's sometimes to difficult for a meetup group organizers to incentivize and engage community members in active participation through reviews, comments and events promotion.
+
+## Solution & Product
+
+A blockchain-based platform rewards the community members for their contributions. You will be able to build a reputation and get rewarded in crypto. 
 
 By financially and reputationally incentivising the meetup groups organizers and active members of these communities we aim to create a platform that will accelerate knowledge sharing and collaboration, where members are fairly rewarded for their efforts and contributions to the communities.
 
@@ -34,24 +68,8 @@ Companies can sponsor meetups events and groups and get exposure on the dMeetup 
 
 The profits of each meetup group gets distributed among all members proportionally to their contributions to the group.
 
-## Contents
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [Token Model](#token-model)
-- [Getting Started](#getting-started)
-- [Directory Structure](#directory-structure)
-- [License](#license)
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-- [Bug Reporting](#bug-reporting)
-- [License](#license-1)
-- [Become a Supporter](#become-a-supporter)
-- [Pura Vida DAC](#pura-vida-dac)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+It's a tokenized version of [Meetup](https://meetup.com/) with incentives for the community members.
+A version of [Steemit](https://steemit.com/) for events and workshops.
 
 ## MVP
 
@@ -63,7 +81,23 @@ The minimum viable product must be able to provide the users with a set of tools
 - Communicating with other users, groups or meetups, via comments.
 - Monetization.
 
-## Token Model
+## Token Model and Distribution
+
+_WIP..._
+
+- Rewards
+- Community fund
+- Core team
+
+## dMeetup DAC
+
+The ÐMeetup DAC will be responsible for :
+
+- Promoting the long-term vision and success of the DMeetup project.
+- Project governance. This includes decision making, community voting and helping to guide the
+  overall direction of the project.
+
+## Growth Model
 
 _WIP..._
 
