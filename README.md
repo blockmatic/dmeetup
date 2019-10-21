@@ -40,6 +40,7 @@ The profits of each meetup group gets distributed among all members proportional
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Token Model](#token-model)
 - [Getting Started](#getting-started)
 - [Directory Structure](#directory-structure)
 - [License](#license)
@@ -51,6 +52,10 @@ The profits of each meetup group gets distributed among all members proportional
 - [Pura Vida DAC](#pura-vida-dac)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Token Model
+
+_WIP..._
 
 ## Getting Started
 
