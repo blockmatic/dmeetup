@@ -109,6 +109,10 @@ _WIP..._
 
 _WIP..._
 
+## References
+
+- https://www.kaggle.com/sirpunch/meetups-data-from-meetupcom/
+
 ## License
 
 MIT © [Pura Vida DAC](https://puravidadac.one)  
