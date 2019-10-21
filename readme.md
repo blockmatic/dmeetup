@@ -1,12 +1,17 @@
 <p align="center">
+	</a>
 	<a href="https://git.io/col">
 		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
 	</a>
-	<a href="https://twitter.com/intent/follow?screen_name=puravidaeos">
-		<img src="https://img.shields.io/twitter/follow/puravidaeos.svg?style=social&logo=twitter" alt="follow on Twitter">
+  <a href="https://developers.blockmatic.io">
+		<img src="https://img.shields.io/badge/code%20style-blockmatic-brightgreen.svg" alt="Blockmatic Standard">
 	</a>
-	<a href="#">
-		<img src="https://img.shields.io/dub/l/vibe-d.svg" alt="MIT">
+	<img src="https://img.shields.io/dub/l/vibe-d.svg" alt="MIT" />
+	<a href="https://twitter.com/intent/follow?screen_name=blockmatic_io">
+		<img src="https://img.shields.io/twitter/follow/blockmatic_io.svg?style=social&logo=twitter" alt="Follow on Twitter" />
+	</a>
+	<a href="https://t.me/blockmatic">
+		<img src="https://img.shields.io/badge/-Chat%20on%20Telegram-blue?style=social&logo=telegram" alt="Chat on Telegram">
 	</a>
 </p>
 
@@ -51,85 +56,13 @@ The value of their contributions will be calculated based on the activity and th
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Development Setup
+## Getting Started
 
-Basic knowledge about Docker, Docker Compose, EOS and NodeJS is required.
-
-- Video tutorial [Docker Containers | Learn Docker Basics in 30 Mins](https://www.youtube.com/watch?v=0kwXLcwUw0Q)
-
-### Global Dependencies
-
-- Docker https://docs.docker.com/install/.  
-  At least 10GB RAM (Docker -> Preferences -> Advanced -> Memory -> 10GB or above)
+__WIP...___
 
 ## Directory Structure
 
-```
-.
-├── docs/ .............................................. documentation files and media
-├── contracts/ ......................................... eos smart contracts 
-├── services/ .......................................... microservices
-|   ├── demux/ ......................................... demux-js service
-|   |   ├── utils/ ..................................... general utilities
-|   |   ├── src/ ....................................... application biz logic 
-|   |   ├── Dockerfile ................................. service image spec 
-|   |   ├── pm2.config.js .............................. process specs for pm2
-|   |   ├── tsconfig.json .............................. tslint config
-|   |   ├── tslint.json ................................ code style rules
-|   |   └── package.json ............................... service dependencies manifest
-|   |
-|   ├── postgres/ ...................................... postgres db service
-|   |   └── migrations/ ................................ flyway migrations
-|   |
-|   ├── hasura/ ........................................ graphql endpoint service
-|   |   └── migrations/ ................................ hasura migrations
-|   |
-|   └── frontend/ ...................................... reactjs frontend
-|       ├── public/ .................................... static and public files
-|       ├── src/ ....................................... reactjs views and components
-|       ├── config-overrides.js ........................ configuration overrides for `cra`
-|       ├── .env ....................................... environment variables
-|       ├── .eslintrc .................................. code style rules
-|       └── package.json ............................... service dependencies manifest
-|   
-├── docker-compose.yaml ................................ docker compose for local dev
-├── contributing.md .................................... contributing guidelines
-├── license ............................................ project license
-├── makefile ........................................... make tasks manifest
-├── readme.md .......................................... project documentation
-├── netlify.toml ....................................... netlify config file
-├── .travis.yml ........................................ travis ci config file
-└── .editorconfig ...................................... common text editor configs
-```
-
-## React Documentation
-
-The React client was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-See [full create-react-app documentation](docs/create-react-app.md)
-
-**App Components**
-
-- [react-app-rewired](https://github.com/timarney/react-app-rewired) for tweaking `create-react-app` configuration without ejecting
-- [reach-router](https://github.com/reach/router) for a more accessible router.
-- state management with [rematch](https://github.com/rematch/rematch) to use `redux` best practices without all the boilerplate.
-- [grid-styled](https://github.com/jxnblk/grid-styled) for a flexbox grid built on top of `styled-components` and [system-components](https://github.com/jxnblk/styled-system/tree/master/system-components) for a consistent design system.
-
-## Continuous Integration Process
-
-We follow a continuous integration process based on Github flow that leverages the following tools:
-
-- [TravisCI](https://travis-ci.org/) to run test and code style checks
-- [Netlify](https://netlify.com) for continuous delivery to the stanging server and creation pull request specific environments for testing. awesome!
-- [Code Factor](https://codefactor.io) for automated code quality reviews.
-
-## Contributing
-
-We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/puravidaeos/dmeetup/projects/1).
-
-We follow EOS Costa Rica's Open Source Contributing Guidelines. https://developers.eoscostarica.io/docs/open-source-guidelines
-
-Please report bugs big and small by [opening an issue](https://github.com/puravidaeos/dmeetup/issues).
+__WIP...___
 
 ## License
 
@@ -146,3 +79,66 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
+
+## Contributing
+
+We use a Kanban-style board with built-in triggers to automatically move issues and pull requests across New Issues, To Do, In Progress and Done columns. That's were we prioritize the work. [Go to Project Board](https://github.com/puravidadac/dmeetup/projects/1).
+
+We follow Blockmatic's Open Source Contributing Guidelines.    
+Visit [developers.blockmatic.io/contributing-guidelines](https://developers.blockmatic.io/contributing-guidelines) for details.
+
+## Bug Reporting
+
+Please report bugs big and small by [opening an issue](https://github.com/puravidadac/puravidadac.one/issues/new). No possible bug report is too small.
+
+## License
+
+MIT © [PuraVida DAC](http://puravidadac.one)  
+
+## Become a Supporter
+
+You can become by sending us crypto to the following addresses:
+ 
+- EOS: puravidadac1
+- TELOS: puravidadac1
+
+---
+
+## Pura Vida DAC
+
+The Pura Vida DAC is software development collective that operates entirely on smart contracts.
+
+[puravidadac.io](https://puravidadac.io)  
+
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
+
+<!-- display the social media buttons in your README -->
+
+[![PuraVida DAC Twitter][1.1]][1]
+[![PuraVida DAC Facebook][2.1]][2]
+[![PuraVida DAC Github][3.1]][3]
+
+<!-- links to social media icons -->
+<!-- no need to change these -->
+
+<!-- icons with padding -->
+
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
+[3.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+
+<!-- icons without padding -->
+
+[1.2]: http://i.imgur.com/wWzX9uB.png (twitter icon without padding)
+[2.2]: http://i.imgur.com/fep1WsG.png (facebook icon without padding)
+[3.2]: http://i.imgur.com/9I6NRUm.png (github icon without padding)
+
+
+<!-- links to your social media accounts -->
+<!-- update these accordingly -->
+
+[1]: http://www.twitter.com/puravidadac
+[2]: http://fb.me/puravidadac
+[3]: http://www.github.com/puravidadac
+
+<!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
