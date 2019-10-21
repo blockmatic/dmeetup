@@ -58,6 +58,25 @@
         "bug",
         "example"
       ]
+    },
+    {
+      "login": "edgar-eoscostarica",
+      "name": "Edgar Fernandez",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40245170?v=4",
+      "profile": "http://www.eoscostarica.io",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "xavier506",
+      "name": "Xavier Fernandez",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5632966?v=4",
+      "profile": "https://eoscostarica.io",
+      "contributions": [
+        "ideas"
+      ]
     }
-  ]
+  ],
+  "commitConvention": "none"
 }
