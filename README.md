@@ -17,26 +17,22 @@
 
 <br/>
 <p align="center">
-	<img src="brand/logo/logo.svg" width="500px">
+	<img src="assets/dmeetup-logo.svg" width="500px">
 </p>
 
-DMeetup is decentralized autonomous community and economic system that rewards community members for organizing and attending meetups and workshops. 
+__DMeetup is decentralized autonomous community and economic system that rewards community members for organizing and attending meetups and workshops.__ 
 
-By financially and reputationally incentivising the meetup groups organizers and active members of these communities we aim to create a platform that will accelerate knowledge sharing and community groups sustainability, where members are fairly rewarded for their efforts and contributions to the communities.
+By financially and reputationally incentivising the meetup groups organizers and active members of these communities we aim to create a platform that will accelerate knowledge sharing and collaboration, where members are fairly rewarded for their efforts and contributions to the communities.
 
-Users are incentivized to attend events and add value to meetup groups. In order to rsvp an event a user have to stake  EOS and you can get it back the day of the event if you attend. The EOS of the people that don't show up gets distributed among the attendees and the meetup group balance.
+Users are incentivized to attend events and add value to meetup groups. In order to reserve your spot at an event the you have to stake tokens, which you will get back the day of the event if you attend. The tokens of the people that don't show up gets distributed among the attendees and a portion of it goes to meetup group balance.
 
-You will be able to build a reputation, get rewarded and charge a fee in crypto. The platform rewards the organizers, speakers and active members through the MEETUP reputation token. 
-
-DMeetup a 100% open-source and community-driven project and we welcome contributions of all sorts. There are many ways to help, from reporting issues, proposing features, improving documentation, contributing code, design/ux proposals, refining the economic model and helping us improve our community. People who contribute to the Meetup project will share the DAC profits in proportion to their contributions.
+You will be able to build a reputation, get rewarded and charge a fee in crypto for attending your events. The platform rewards the organizers, speakers and active members through the MEETUP token. 
 
 Each meetup group is an independent DAC with it's own balance.
 
-Companies can sponsor meetups events and groups with EOS and get publicity on the event and group.
+Companies can sponsor meetups events and groups and get exposure on the dMeetup platform.
 
 The profits of each meetup group gets distributed among all members proportionally to their contributions to the group.
-
-The value of their contributions will be calculated based on the activity and their DMeetup reputation within a period of time.
 
 ## Contents
 
@@ -44,25 +40,25 @@ The value of their contributions will be calculated based on the activity and th
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Development Setup](#development-setup)
-  - [Global Dependencies](#global-dependencies)
+- [Getting Started](#getting-started)
 - [Directory Structure](#directory-structure)
-- [React Documentation](#react-documentation)
-- [Continuous Integration Process](#continuous-integration-process)
-- [Contributing](#contributing)
-- [About EOS Costa Rica](#about-eos-costa-rica)
 - [License](#license)
 - [Contributors](#contributors)
+- [Contributing](#contributing)
+- [Bug Reporting](#bug-reporting)
+- [License](#license-1)
+- [Become a Supporter](#become-a-supporter)
+- [Pura Vida DAC](#pura-vida-dac)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Getting Started
 
-__WIP...___
+_WIP..._
 
 ## Directory Structure
 
-__WIP...___
+_WIP..._
 
 ## License
 
@@ -74,8 +70,15 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;"/><br /><sub><b>Gabo Esquivel</b></sub>](https://gaboesquivel.com)<br />[🤔](#ideas-gaboesquivel "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel "Code") [👀](#review-gaboesquivel "Reviewed Pull Requests") [📹](#video-gaboesquivel "Videos") [📢](#talk-gaboesquivel "Talks") | [<img src="https://avatars1.githubusercontent.com/u/1179619?v=4" width="100px;"/><br /><sub><b>Jorge Murillo</b></sub>](https://github.com/murillojorge)<br />[🤔](#ideas-murillojorge "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Documentation") [🎨](#design-murillojorge "Design") [💻](https://github.com/eoscostarica/dmeetup/commits?author=murillojorge "Code") [👀](#review-murillojorge "Reviewed Pull Requests") | [<img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;"/><br /><sub><b>Kevin Wolf</b></sub>](https://github.com/kevinwolfcr)<br />[🤔](#ideas-kevinwolfcr "Ideas, Planning, & Feedback") [📖](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Documentation") [💻](https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr "Code") [👀](#review-kevinwolfcr "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/5632966?v=4" width="100px;"/><br /><sub><b>Xavier Fernandez</b></sub>](https://github.com/xavier506)<br />[🤔](#ideas-xavier506 "Ideas, Planning, & Feedback") [📝](#blog-xavier506 "Blogposts") [📢](#talk-xavier506 "Talks") [🚇](#infra-xavier506 "Infrastructure (Hosting, Build-Tools, etc)") | [<img src="https://avatars2.githubusercontent.com/u/40245170?v=4" width="100px;"/><br /><sub><b>Edgar Fernandez</b></sub>](http://www.eoscostarica.io)<br />[🤔](#ideas-edgar-eoscostarica "Ideas, Planning, & Feedback") [📝](#blog-edgar-eoscostarica "Blogposts") [📢](#talk-edgar-eoscostarica "Talks") | [<img src="https://avatars2.githubusercontent.com/u/13205620?v=4" width="100px;"/><br /><sub><b>Rubén Abarca Navarro</b></sub>](https://github.com/rubenabix)<br />[🤔](#ideas-rubenabix "Ideas, Planning, & Feedback") [👀](#review-rubenabix "Reviewed Pull Requests") | [<img src="https://avatars1.githubusercontent.com/u/1449049?v=4" width="100px;"/><br /><sub><b>Friedger Müffke</b></sub>](https://github.com/friedger)<br />[💻](https://github.com/eoscostarica/dmeetup/commits?author=friedger "Code") [🐛](https://github.com/eoscostarica/dmeetup/issues?q=author%3Afriedger "Bug reports") [💡](#example-friedger "Examples") |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+<table>
+  <tr>
+    <td align="center"><a href="https://gaboesquivel.com"><img src="https://avatars0.githubusercontent.com/u/391270?v=4" width="100px;" alt="Gabo Esquivel"/><br /><sub><b>Gabo Esquivel</b></sub></a><br /><a href="#ideas-gaboesquivel" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel" title="Documentation">📖</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=gaboesquivel" title="Code">💻</a> <a href="#review-gaboesquivel" title="Reviewed Pull Requests">👀</a> <a href="#video-gaboesquivel" title="Videos">📹</a> <a href="#talk-gaboesquivel" title="Talks">📢</a></td>
+    <td align="center"><a href="https://github.com/murillojorge"><img src="https://avatars1.githubusercontent.com/u/1179619?v=4" width="100px;" alt="Jorge Murillo"/><br /><sub><b>Jorge Murillo</b></sub></a><br /><a href="#ideas-murillojorge" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=murillojorge" title="Documentation">📖</a> <a href="#design-murillojorge" title="Design">🎨</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=murillojorge" title="Code">💻</a> <a href="#review-murillojorge" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/kevinwolfcr"><img src="https://avatars2.githubusercontent.com/u/3157426?v=4" width="100px;" alt="Kevin Wolf"/><br /><sub><b>Kevin Wolf</b></sub></a><br /><a href="#ideas-kevinwolfcr" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr" title="Documentation">📖</a> <a href="https://github.com/eoscostarica/dmeetup/commits?author=kevinwolfcr" title="Code">💻</a> <a href="#review-kevinwolfcr" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/friedger"><img src="https://avatars1.githubusercontent.com/u/1449049?v=4" width="100px;" alt="Friedger Müffke"/><br /><sub><b>Friedger Müffke</b></sub></a><br /><a href="https://github.com/eoscostarica/dmeetup/commits?author=friedger" title="Code">💻</a> <a href="https://github.com/eoscostarica/dmeetup/issues?q=author%3Afriedger" title="Bug reports">🐛</a> <a href="#example-friedger" title="Examples">💡</a></td>
+  </tr>
+</table>
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
