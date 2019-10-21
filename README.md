@@ -53,6 +53,16 @@ The profits of each meetup group gets distributed among all members proportional
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## MVP
+
+The minimum viable product must be able to provide the users with a set of tools that allows them to complete the most general tasks. For a MVP this tasks should include:
+
+- Searching or browsing for groups or/and meetups.
+- Joining groups and/or meetups.
+- Creating groups or/and meetups.
+- Communicating with other users, groups or meetups, via comments.
+- Monetization.
+
 ## Token Model
 
 _WIP..._
