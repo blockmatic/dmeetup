@@ -41,6 +41,10 @@ The minimum viable product must be able to provide the users with a set of tools
 - Creating groups or/and meetups.
 - Communicating with other users, groups or meetups, via comments.
 
+## Demo Site 
+
+- https://kanban.blockmatic.io
+
 ## References
 
 - https://www.kaggle.com/sirpunch/meetups-data-from-meetupcom/
