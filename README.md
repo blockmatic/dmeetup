@@ -54,8 +54,6 @@ https://t.me/blockmatic
 
 Read the [contributing guidelines](https://developers.blockmatic.io) for details.
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
 ## Blockmatic
 
 Blockmatic is building a robust ecosystem of people and tools for development of decentralized applications.
