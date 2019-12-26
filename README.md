@@ -16,12 +16,11 @@
 	<img src="assets/dmeetup-logo.svg" width="500px">
 </p>
 
-DMeetup is a events portal that rewards you for organizing and attending meetups and workshops.
+DMeetup is an events portal that rewards you for organizing and attending meetups.
 
 ## Problem
 
-A lot people run meetup communities and have to pay centralized solutions to publish and promote their events. 
-
+A lot people run meetup communities and have to pay existing solutions to publish and promote their events. 
 It's sometimes to difficult for a meetup group organizer to incentivize and engage community members in active participation.
 
 ## Solution
@@ -34,20 +33,14 @@ Companies can sponsor meetups events and groups and get exposure on the dMeetup 
 
 ## MVP
 
-The minimum viable product must be able to provide the users with a set of tools that allows them to complete the most general tasks. For a MVP this tasks should include:
-
-- Searching or browsing for groups or/and meetups.
-- Joining groups and/or meetups.
 - Creating groups or/and meetups.
+- Joining groups and/or meetups.
+- Searching or browsing for groups or/and meetups.
 - Communicating with other users, groups or meetups, via comments.
 
 ## Demo Site 
 
 - https://kanban.blockmatic.io
-
-## References
-
-- https://www.kaggle.com/sirpunch/meetups-data-from-meetupcom/
 
 ## Disclaimer
 
