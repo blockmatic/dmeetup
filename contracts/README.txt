@@ -1,4 +1,4 @@
-## dMeetup Contracts
+# dMeetup Contracts
 
 ## Getting Started
 
