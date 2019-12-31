@@ -1,6 +1,6 @@
 [build]
   base    = "./frontend"
-  command = "yarn build"
+  command = "yarn build:$STAGE"
   publish = "./frontend/build"
 
 [context.production.environment]
@@ -13,3 +13,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
