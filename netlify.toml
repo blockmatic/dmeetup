@@ -1,6 +1,6 @@
 [build]
   base    = "./frontend"
-  command = "yarn build:$STAGE"
+  command = "yarn build"
   publish = "./frontend/build"
 
 [context.production.environment]
