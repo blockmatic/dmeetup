@@ -40,7 +40,7 @@ Companies can sponsor meetups events and groups and get exposure on the dMeetup 
 
 ## Demo Site 
 
-- https://meetup.blockmatic.io
+- https://dmeetup.blockmatic.io
 
 ## Disclaimer
 
